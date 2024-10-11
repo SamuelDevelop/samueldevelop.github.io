@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="short-screens.css">
+    <link rel="stylesheet" media="screen and (max-width:760px)" href="short-screens.css">
     <link rel="icon" href="https://i.pinimg.com/originals/01/ee/fe/01eefe3662a40757d082404a19bce33b.png" type="image/png">
 
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=New+Amsterdam&display=swap" rel="stylesheet">
@@ -25,9 +25,14 @@
         <h1>ONE ANIME</h1>
     </header>
 
-    <article>
-        <a class="voltar-home" href="index.html"> 🏠 Home</a>
-    </article>
+    <div id="barra-lateral" class="barra-lateral">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h1>Menu:</h1>
+        <a href="index.html">🏠 Home</a>
+        <a href="One Piece.html">☠️ One Piece</a>
+        <a href="Em Alta.html">🔥 Em Alta</a>
+        <a href="#">💬 Referencias</a>
+    </div>
 
     <main>
         <section class="secao-inicial">
@@ -199,9 +204,11 @@
             </tbody>
         </table>
     </main>
+    <button class="openbtn" onclick="openNav()">
+        <img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="Menu" >
+    </button>
 
-    
-    
+<script src="script.js"></script>
    
 </body>
 </html>
