@@ -23,10 +23,9 @@
     header{
         color: white;
         background-image: linear-gradient(to bottom, rgb(75, 0, 160) 50%, rgba(75, 0, 160, 0.842)) ;
-        position: fixed; top: 0;  z-index: 6;
+        position: block;  z-index: 6;
         height: 60px; width: 100%;
         box-sizing: border-box;
-        
     }
 
     header h1{
@@ -39,7 +38,7 @@
     }
 
     h2{
-        font-size: 35px;
+        font-size: 200%;
         letter-spacing: 0em;
         margin-left: auto; margin-right: auto;   
         animation: none;
@@ -49,12 +48,12 @@
         color: white;
         font-family: "Anton", sans-serif;
         font-weight: 200; font-style: normal;
-        font-size: 20px;
+        font-size: 100%;
     }
 
     .secao-inicial h2{
         margin-left: 0px; margin-right: auto;
-        font-size: 200%;
+        font-size: 260%;
     }
 
     .secao-inicial{
@@ -64,7 +63,6 @@
         display: flex; flex-direction: column-reverse; align-items: flex-start; 
         background-color: rgba(85, 12, 255, 0);
         padding: 0px;
-        margin-top: 62px;
     }
 
     .texto-secao-inicial{
@@ -73,7 +71,7 @@
     }
 
     .secao-inicial img:not(.logotipo-inicial){
-        width: 70%;
+        width: 90%;
         filter:saturate(2);
         border-radius: 15px; 
         transition: none;
@@ -82,7 +80,7 @@
     }
 
     .secao-inicial p{
-        margin-top: 5px;     margin-right: 5px;
+        margin-top: 5px; margin-right: 5px;
         width: 100%;
         padding: 5px 2px;
         box-shadow: none;
@@ -107,6 +105,7 @@
         flex-direction: column;
         align-items: center;
         box-shadow: none;
+        background-color: rgba(42, 0, 70, 0.37);
     } 
     .texto-secao-inicial  .logotipo-inicial{
         width: 20%;
@@ -134,7 +133,7 @@
     }
 
     .box-texto article{
-        width: 85%;
+        width: 100%;
         text-align: center;
         background-color: #ffffff00;
         border: rgba(255, 255, 255, 0) 0px solid;
@@ -145,34 +144,33 @@
 
     .box-texto article p{
         line-height: 1.0;
-        text-align: center;
-        background-color: #151516;
-        background-color: #ffffff00;
-        border: rgba(255, 255, 255, 0.055) 1px solid;
+        text-align: left;
+        width: 98%;
+        border: rgba(255, 255, 255, 0) 1px solid;
     } 
 
-    .box-texto article img{
-        width: 70%;
-        filter: brightness(90%);
+    .box-texto article img, .box-texto article img:hover{
+        width: 98%;
         margin-left: auto; margin-right: auto;
-    }
-    .box-texto article img:hover{
-        width: 70%;
         filter: none;
+        box-shadow: none;
     }
+
+    .box-texto h3, .box-conteudos h3{ font-size: 180%;}
 
     .outros-main{
         display: inline-flex;
         flex-direction: row;
         box-sizing: border-box;
-        width: 90%;
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 0px; margin-right: 0px;
         border: 1px solid rgba(255, 255, 255, 0.055);
-        padding: 20px;
+        padding: 1%;
         overflow: auto;
     }
     .outros-main article{
         display: flex; justify-content: space-between;
+        margin: 1% 1%;
     }
     .outros-main article img{
         width: 100px;
@@ -185,6 +183,19 @@
         padding: 20px;
     }
 
+    table {
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    tbody, thead { 
+        font-size: 70%;
+    }
+    td
+    {
+        padding: 1%;
+    }
+
     iframe {
         width: 100%;
         height: auto;
@@ -193,8 +204,10 @@
 
     .barra-lateral{
         background-color: rgba(0, 0, 0, 0.932);
-        font-size: 8px;
+        background-image: none;
     }
+    .barra-lateral a { font-size: 75%;}
+    
     .openbtn {
         border: none; border-radius: none;
         padding: 1%;
@@ -209,7 +222,7 @@
         top: 1%; right: 1%;
         width: 40px; height: 40px;
         position: fixed;
-        opacity: 0.6;
+        opacity: 0.8;
         border: 2px white solid;
         border-radius: 50%;
         padding: 2px;
