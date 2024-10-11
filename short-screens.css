@@ -157,7 +157,6 @@
         margin-left: auto; margin-right: auto;
     }
     .box-texto article img:hover{
-
         width: 70%;
         filter: none;
     }
@@ -166,20 +165,24 @@
         display: inline-flex;
         flex-direction: row;
         box-sizing: border-box;
-        width: 60%;
+        width: 90%;
         margin-left: 20px;
         border: 1px solid rgba(255, 255, 255, 0.055);
         padding: 20px;
         overflow: auto;
     }
+    .outros-main article{
+        display: flex; justify-content: space-between;
+    }
     .outros-main article img{
         width: 100px;
         height: 90px;
+        border-radius: 5%;
     }
 
     .outros-main article:hover{
         background-color: rgba(85, 12, 255, 0);
-        padding: 10px 5px;
+        padding: 20px;
     }
 
     iframe {

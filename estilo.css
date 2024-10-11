@@ -226,7 +226,7 @@ p{
 .outros-main article{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; justify-content: space-between;
     margin-left: 8px;  margin-right: 12px; 
     background-color: #151516;
     border: 1px solid rgba(255, 255, 255, 0.055); border-radius: 5px;
@@ -257,23 +257,15 @@ p{
     padding: 10px;
     background-color: #131314;
     border: 1px solid rgba(255, 255, 255, 0.11);
-    transition: 500ms ease-in-out;
+    transition: 250ms ease-in-out;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .box-links img{
     width: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-end;
-    
 }
-.box-links .links{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
+
 .box-links:hover{
     padding: 15px;
     background-color: rgba(85, 12, 255, 0.308);
@@ -293,8 +285,9 @@ p{
     border-radius: 5px;
     font-size: 20px;
     margin-bottom: 10px;
-    transition: 500ms ease-in-out;
+    transition: 100ms ease-in-out;
 }
+
 .box-links a:hover{
     color: rgb(85, 12, 255); background-color: rgb(255, 255, 255);
     padding: 6px;
