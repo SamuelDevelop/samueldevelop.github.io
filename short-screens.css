@@ -172,7 +172,7 @@
         display: flex; justify-content: space-between;
         margin: 1% 1%;
     }
-    .outros-main article img{
+    .outros-main article img, .outros-main article img:hover{
         width: 100px;
         height: 90px;
         border-radius: 5%;
@@ -180,7 +180,12 @@
 
     .outros-main article:hover{
         background-color: rgba(85, 12, 255, 0);
-        padding: 20px;
+        padding: 10px 5px;
+    }
+    .box-links a{ border:rgba(255, 255, 255, 0.11) solid 1px; }
+
+    .box-links .links{
+        margin: 1% 1% 1% 0%;
     }
 
     table {
@@ -191,10 +196,7 @@
     tbody, thead { 
         font-size: 70%;
     }
-    td
-    {
-        padding: 1%;
-    }
+    td { padding: 1%; }
 
     iframe {
         width: 100%;
@@ -227,3 +229,4 @@
         border-radius: 50%;
         padding: 2px;
     }
+    

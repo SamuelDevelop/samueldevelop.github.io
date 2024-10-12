@@ -33,17 +33,17 @@ header{
     gap: 20px;
 }
 
-h1, h2, h3, p, a{
+h1, h2, h3, p, a, .box-referencias{
     color: white;
 }
 
-h1, h2, #texto-carrossel{
+h1, h2, #texto-carrossel, .box-referencias summary{
     font-family: "New Amsterdam", sans-serif; font-weight: bold;
     font-style: normal;
     margin-left: 10px;  
 }
 
-header h1{
+header h1, footer h1{
     font-size: 49px;
 }
 
@@ -219,7 +219,7 @@ p{
 }
 
 .outros-main article:hover{
-    background-color: rgba(85, 12, 255, 0.308);
+    background-color: rgba(85, 12, 255, 0.116);
     padding: 5px 20px;
 }
 
@@ -247,19 +247,34 @@ p{
     width: 220px;
     height: 210px;
     filter: brightness(80%);
+    border: 2px solid rgba(255, 255, 255, 0.61);
 }
 
 .box-links{
-    font-size: 35px;
     margin-left: 20px;
     margin-right: auto;
     margin: 8px;
-    padding: 10px;
-    background-color: #131314;
-    border: 1px solid rgba(255, 255, 255, 0.11);
     transition: 250ms ease-in-out;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+}
+
+.box-referencias, .box-links{
+    background-color: #131314;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    padding: 10px;
+}
+
+.box-referencias a {
+    display: inline; text-decoration: underline;
+    font-size: 90%; color: rgb(181, 124, 255);
+}
+.box-referencias p{
+    margin: 4px;
+}
+
+.box-referencias summary{
+    font-size: 180%;
 }
 
 .box-links img{
@@ -273,24 +288,32 @@ p{
 
 .box-links summary{
     color: rgb(255, 255, 255);
-    color: white;
+    font-size: 200%;
     font-family: "Anton", sans-serif;
     font-weight: 200; font-style: normal;
 }
 
+.box-links .links{
+    margin: 1% 50% 1% 0%;
+}
 .box-links a{
-    color: rgb(255, 255, 255); background-color: rgb(85, 12, 255);
+    color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.616);
     border: rgba(0, 0, 0, 0.521) solid 1px;
-    padding: 5px; 
-    border-radius: 5px;
+    padding: 5px;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     transition: 100ms ease-in-out;
+    display: block;
 }
 
 .box-links a:hover{
     color: rgb(85, 12, 255); background-color: rgb(255, 255, 255);
     padding: 6px;
+}
+
+iframe{
+    border-radius: 8px;
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.623);
 }
 
 .voltar-home{
@@ -344,7 +367,7 @@ td:hover{
 }
 
 .barra-lateral{
-    background-image:linear-gradient(to top left,rgb(131, 22, 255), rgba(85, 12, 255, 0.644), rgb(11, 0, 37)) ;
+    background-image:linear-gradient(to bottom right,rgb(131, 22, 255), rgba(85, 12, 255, 0.644), rgb(11, 0, 37)) ;
 }
 .barra-lateral {
     height: 100%; width: 0; 
@@ -457,5 +480,23 @@ button img:hover{
 #btn-proximo {
     margin-left: 10px;
 }
+
+footer{
+    background-color: rgba(34, 37, 39, 0.521);
+    border: rgba(255, 255, 255, 0.082) 1px solid;
+    height: 5%; margin: 0;
+    margin-top: 2%; padding: 1%;
+    display: flex; flex-direction: row; align-items: center;
+}
+
+footer p, footer a{
+    margin-left:1%;
+}
+footer a{
+    text-decoration: underline;
+}
+
+
+
 
 
