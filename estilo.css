@@ -416,63 +416,6 @@ button img:hover{
     padding: 2px;
 }
 
-.carrossel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    max-width: 500px;
-    margin: 15px auto 15px 5px;
-    text-align: center;
-}
-
-#texto-carrossel{
-    font-size: 35px;
-}
-
-.conteudo-carrossel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.conteudo-carrossel img {
-    width: 200px;
-    height: 190px;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: opacity 250ms ease-in-out;
-}
-
-.conteudo-carrossel p {
-    font-size: 18px;
-    margin-top: 10px;
-    transition: opacity 100ms ease-in-out;
-}
-
-.seta {
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0 10px;
-}
-
-.seta:focus {
-    outline: none;
-}
-
-#btn-anterior {
-    margin-right: 10px;
-}
-
-#btn-proximo {
-    margin-left: 10px;
-}
-
 footer{
     background-color: rgba(34, 37, 39, 0.521);
     border: rgba(255, 255, 255, 0.082) 1px solid;

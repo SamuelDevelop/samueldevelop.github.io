@@ -20,3 +20,4 @@ document.getElementById("mostrarFoguinhoBtn").addEventListener("click", function
         }, 2000); // Tempo da animação
     }, 100); // Pequeno delay para mostrar o foguinho
 });
+

@@ -1,3 +1,10 @@
+.barra-lateral img{
+    position: absolute;
+    width: 100px;
+    bottom: 10%;
+    z-index: 8;
+}
+
 .sessao-anime-carrocel {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -37,30 +44,6 @@
 .imagem-detalhes-carrocel {
     transition: opacity 250ms ease;
     opacity: 1; 
-}
-
-#mostrarFoguinhoBtn{
-    background-color: purple;
-    border: rgba(255, 255, 255, 0.288) 2px solid;
-    border-radius: 50%;
-    padding: 1%;
-    cursor: pointer;
-    display: inline;
-}
-
-#containerFoguinho {
-    position: relative;
-    overflow: hidden;
-}
-
-#foguinho {
-    position: absolute;
-    bottom: 0;
-    transition: transform 2s ease, opacity 2s ease;
-}
-
-.escondido {
-    display: none;
 }
 
 @media screen and (max-width:760px){
