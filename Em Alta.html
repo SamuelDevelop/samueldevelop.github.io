@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="carrocel.css">
     <link rel="stylesheet" media="screen and (max-width:760px)" href="short-screens.css">
     <link rel="icon" href="Imagens/icone do site.png">
     <!--Fontes:-->
@@ -42,16 +43,20 @@
     <main>
 
         <h2>Animes Em Alta: </h2>
-        <section class="secao-inicial">
-            
-            <article class="texto-secao-inicial"> 
-                <img class="logotipo-inicial" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jujutsu_Kaisen_logo_in_Japan.png/640px-Jujutsu_Kaisen_logo_in_Japan.png">
-                <p><span class="informacoes-especiais">Classificação: A16 | 4.9 ⭐⭐⭐⭐⭐ | 447k (crunchyroll)| Vencedor Anime Awards 2024</span>
-                </p>
+
+        <section class="sessao-anime-carrocel">
+            <article class="detalhes-anime-carrocel">
+                <img id="logo-anime" class="logo-anime-carrocel" src="Imagens/emAltaImgs/Logo JKK.png">
+                <div class="descricao-carrocel">
+                    <p id="texto-anime">
+                        Jujutsu Kaisen segue Yuji Itadori, um estudante do ensino médio que se torna um usuário de Jujutsu após engolir um dedo amaldiçoado. O anime combina ação intensa com um enredo envolvente, explorando temas como amizade, sacrifício e a luta contra maldições.
+                    </p>
+                </div>
             </article>
-            <img src="https://portalcmais.com.br/wp-content/uploads/2024/02/Copia-de-Design-sem-nome-1-2.png">
+            <img id="imagem-detalhes" class="imagem-detalhes-carrocel" src="Imagens/emAltaImgs/Img JJK.png">
         </section>
-        <h2>Tá na boca do Povo: 💬</h2>
+
+        <h2>Notícias: </h2>
 
         <section class="box-texto">
             <article>
@@ -73,7 +78,12 @@
                     Portanto Dragon Ball DAIMA estreia na Netflix a partir de 14 de outubro na Ásia e globalmente em 18 de outubro de 2024 — a data de lançamento pode variar de acordo com o país.<br>Créditos: AnimeNew.com</p>
 
             </article>
-        </section>         
+        </section> 
+        
+        <button id="mostrarFoguinhoBtn">🔥</button>
+            <div id="containerFoguinho" class="escondido">
+                <img src="Imagens/Ester-Eggs/fire.gif" id="foguinho">
+            </div>
     </main>
     <footer>
         <h1>ONE ANIME</h1>
@@ -83,6 +93,7 @@
 
 
 <script src="script.js"></script>
+<script src="Easter-Eggs.js"></script>
 <script src="Carrocel de Imagens.js"></script>
 </body>
 </html>

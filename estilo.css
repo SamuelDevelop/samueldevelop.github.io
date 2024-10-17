@@ -64,16 +64,13 @@ h3{
 .secao-inicial {
     box-sizing: border-box;
     width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    display: flex; justify-content: space-between; align-items: center;
     padding: 15px;
     margin-bottom: 25px;
 }
 
 .texto-secao-inicial {
-    display: flex;
-    flex-direction: column;
+    display: flex; flex-direction: column;
     margin-left: 10px;
     width: 45%;
 }
@@ -83,25 +80,21 @@ h3{
 }
 
 .secao-inicial img:not(.logotipo-inicial){
-    width: 45%;
+    width: 43%;
     filter:saturate(2);
     border-radius: 5px;
     mask-image:radial-gradient(circle farthest-side at center right, rgba(0, 0, 0, 0.89) 30%, rgba(0, 0, 0, 0));
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
 }
 
-.secao-inicial .logotipo-inicial{
-    width: 40%;
-}
+.secao-inicial .logotipo-inicial{ width: 40%; }
 
 .secao-inicial h2{
-    font-size: 70px;
+    font-size: 70px; margin-left: 0px;
 }
 
 .secao-inicial p{
-    margin-top: 10px;     margin-right: 10px; 
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
-    padding: 10px 5px;
     line-height: 1.2;
 }
 .logotipo-inicial, .secao-inicial img:not(.logotipo-inicial), .informacoes-especiais, .texto-secao-inicial p {
@@ -134,8 +127,7 @@ p{
     border: rgba(255, 255, 255, 0.11) solid 1px; border-radius: 5px;
     padding: 8px;
     box-sizing: border-box;
-    display: inline-flex;
-    flex-direction: column;
+    display: inline-flex; flex-direction: column;
     box-shadow: 0px 0px 9px 1px rgba(0,0,0,1);
 }
 
