@@ -5,39 +5,46 @@
     z-index: 8;
 }
 
+button img:hover{
+    border-radius: 2%;
+    background-image:linear-gradient(to top right,#38236d, #350f94, #3100a5);
+}
+
 .sessao-anime-carrocel {
     display: grid;
-    grid-template-columns: 20% 80%;
-    margin: 10px 0px;
-    width: 95%;
-}
+    grid-template-columns: 20% auto;
+    margin: 0px auto 40px 10px;
+    width: 100%;
+}  
 
 .detalhes-anime-carrocel{
     grid-column: 1/3;
     grid-row: 2;
     z-index: 3;
     padding: 1%; padding-bottom: 0px;
+    max-width: 60%;
 }
 
 .imagem-detalhes-carrocel{
     z-index: 2;
-    width: 80%; height: 100%;
+    width: 70%; height: 100%;
     filter: saturate(2);
-    mask-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 85%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.034) 85%);
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
     grid-column: 1/3;
     grid-row: 1/3;
 }
 
 .logo-anime-carrocel{
-    width: 150px;
+    width: 200px;
 }
 
 .descricao-carrocel {
-    max-width: 70%;
     margin-top: 10px;
     padding-bottom: 1%;
+}
+#texto-anime{
+    font-size: 180%;
 }
 
 .detalhes-anime-carrocel,
@@ -70,6 +77,9 @@
     }
     .descricao-carrocel {
         max-height: 40%;
+    }
+    button img{
+        border: 2px white solid;
     }
 
 }

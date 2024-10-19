@@ -2,7 +2,7 @@ const conteudoCarrossel = [
     {
         logo: "Imagens/emAltaImgs/Logo JKK.png",
         texto: "Jujutsu Kaisen segue Itadori, um estudante que se torna um usuário de Jujutsu após engolir um dedo amaldiçoado. O anime possui ação intensa e explora temas como amizade, sacrifício e a luta contra maldições.",
-        imagem: "Imagens/emAltaImgs/Img JJK.png"
+        imagem: "Imagens/emAltaImgs/jjk img.jpg"
     },
     {
         logo: "Imagens/emAltaImgs/Logo Kimetsu.png",
@@ -12,7 +12,7 @@ const conteudoCarrossel = [
     {
         logo: "Imagens/emAltaImgs/Logo solo.png",
         texto: "Solo Leveling segue Jin-Woo, um caçador de baixo nível num mundo repleto de monstros. Após morrer ele recebe uma oportunidade única: um sistema que lhe permite se tornar mais forte a cada missão. Agora, ele busca se tornar o caçador mais poderoso desse mundo.",
-        imagem: "Imagens/emAltaImgs/img solo.webp"
+        imagem: "Imagens/emAltaImgs/img solo.jpg"
     }
 ];
 

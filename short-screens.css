@@ -22,14 +22,10 @@
 
     header{
         color: white;
-        background-image: linear-gradient(to bottom, rgb(75, 0, 160) 50%, rgba(75, 0, 160, 0.842)) ;
-        position: block;  z-index: 6;
-        height: 60px; width: 100%;
+        background-image:linear-gradient(to bottom right,#38236d, #2b195a, #170541);
+        position: block !important;  z-index: 6;
+        height: 60px;
         box-sizing: border-box;
-    }
-
-    header h1{
-        font-size: 25px;
     }
 
     h1{
@@ -88,14 +84,15 @@
         line-height: 1.0;
     }
 
-    .box-conteudos{
+    .box-comparacao{
         display: flex; 
         flex-direction: column;
         align-items: center;  
         width: 100%;
+        background-image:linear-gradient(to top right,#38236d, #2b195a, #170541);
     }
 
-    .box-conteudos article{
+    .box-comparacao article{
         margin-top: 10px; margin-bottom: 10px;
         margin: 0px;
         width: 100%;
@@ -105,7 +102,7 @@
         flex-direction: column;
         align-items: center;
         box-shadow: none;
-        background-color: rgba(42, 0, 70, 0.37);
+        background-image: none;
     } 
     .texto-secao-inicial  .logotipo-inicial{
         width: 20%;
@@ -116,13 +113,13 @@
         font-style: normal; font-weight: bold;
     }
 
-    .box-conteudos article p{
+    .box-comparacao article p{
         line-height: 1.0;
         background-color: #ffffff00;
         border: rgba(255, 255, 255, 0) 0px solid;
         text-align: center;
     } 
-    .box-conteudos article img:not(.logotipo-inicial){
+    .box-comparacao article img:not(.logotipo-inicial){
         width: 65%;
     }
 
@@ -156,9 +153,9 @@
         box-shadow: none;
     }
 
-    .box-texto h3, .box-conteudos h3{ font-size: 180%;}
+    .box-texto h3, .box-comparacao h3{ font-size: 180%;}
 
-    .outros-main{
+    .lista-cards{
         display: inline-flex;
         flex-direction: row;
         box-sizing: border-box;
@@ -168,17 +165,17 @@
         padding: 1%;
         overflow: auto;
     }
-    .outros-main article{
+    .lista-cards article{
         display: flex; justify-content: space-between;
         margin: 1% 1%;
     }
-    .outros-main article img, .outros-main article img:hover{
+    .lista-cards article img, .lista-cards article img:hover{
         width: 100px;
         height: 90px;
         border-radius: 5%;
     }
 
-    .outros-main article:hover{
+    .lista-cards article:hover{
         background-color: rgba(85, 12, 255, 0);
         padding: 10px 5px;
     }
@@ -232,4 +229,8 @@
 
     header h1, footer h1{
         font-size: 180%;
+    }
+
+    footer{
+        background-image:linear-gradient(to bottom right,#38236d, #2b195a, #170541);
     }
