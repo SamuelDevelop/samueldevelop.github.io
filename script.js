@@ -4,7 +4,7 @@ function openNav() {
     if (window.innerWidth > 760) {
         document.getElementById("barra-lateral").style.width = "250px";
     } else {
-        document.getElementById("barra-lateral").style.width = (window.innerWidth * 0.3) + "px";
+        document.getElementById("barra-lateral").style.width = (window.innerWidth * 0.45) + "px";
     }
     document.querySelector(".openbtn").style.display = "none"; 
 }

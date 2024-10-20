@@ -23,9 +23,21 @@
     header{
         color: white;
         background-image:linear-gradient(to bottom right,#38236d, #2b195a, #170541);
-        position: block !important;  z-index: 6;
+        position: block;  z-index: 6;
         height: 60px;
         box-sizing: border-box;
+    }
+    header img{
+        width: 20%;
+        margin: 2px;
+    }
+    @media screen and (max-width:400px) {
+        header img{
+            width: 35%;
+        }
+        .barra-lateral img{
+            width: 50px;
+        }
     }
 
     h1{
@@ -127,6 +139,7 @@
         display: flex; 
         flex-direction: column;
         align-items: center;
+        margin-left: 0px;
     }
 
     .box-texto article{
@@ -152,8 +165,11 @@
         filter: none;
         box-shadow: none;
     }
+    .box-texto article img {
+        float: none;
+    }
 
-    .box-texto h3, .box-comparacao h3{ font-size: 180%;}
+    .box-texto article h3, .box-comparacao h3{ font-size: 180%;}
 
     .lista-cards{
         display: inline-flex;
@@ -179,10 +195,19 @@
         background-color: rgba(85, 12, 255, 0);
         padding: 10px 5px;
     }
-    .box-links a{ border:rgba(255, 255, 255, 0.11) solid 1px; }
+    .box-links a{ 
+        border:rgba(255, 255, 255, 0.11) solid 1px; 
+    }
 
     .box-links .links{
         margin: 1% 1% 1% 0%;
+    }
+    .conteudo-main-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textos-links{
+        width: 100%;
     }
 
     table {
@@ -234,3 +259,8 @@
     footer{
         background-image:linear-gradient(to bottom right,#38236d, #2b195a, #170541);
     }
+    #luffy2, #goku2, #pika2{
+        display: none;
+    }
+
+
