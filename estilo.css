@@ -137,10 +137,11 @@ p{
 
 .box-comparacao article{
     margin: 10px 15px;
-    background-image:linear-gradient(to top right,#38236d, #2b195a, #170541);
+    background-image:linear-gradient(to top right,#13131a, #100f18, #050308); 
     transition: width 250ms ease-in-out;
 }
 .box-comparacao article:hover{ 
+    background-image:linear-gradient(to top right,#38236d, #2b195a, #170541); 
     width: 62%;
 }
 
@@ -202,7 +203,7 @@ p{
     display: inline-flex;
     flex-direction: row;
     box-sizing: border-box;
-    width: 80%;
+    width: 95%;
     margin-left: 20px;
     border: 1px solid rgba(255, 255, 255, 0.055);
     padding: 20px;
@@ -414,15 +415,26 @@ footer img{
     z-index: 8;
     transition: all ease-in-out 100ms;
 }
+#naruto2{
+    opacity: 0;
+}
+#naruto2:hover{
+    opacity: 1;
+}
+
 #luffy2:hover{
-    width: 200px;
+    filter: brightness(-70%);
 }
 #goku2:hover{
-    width: 150px;
-    animation: animacaoGoku 2s ease-in-out;
+    filter: contrast(200%);
+    filter: brightness(350%);
 }
 #pika2:hover{
     animation: pulaPikachu 2s ease-in-out;
+}
+
+#pika2:hover, #goku2:hover, #luffy2:hover, #naruto2:hover{
+    width: 160px;
 }
 
 @keyframes secaoAparecer{
@@ -430,20 +442,13 @@ footer img{
     50%{}
     100%{}
 }
-@keyframes animacaoGoku{
-    0%{opacity: 0;}
-    50%{translate: 150px}
-    100%{opacity: 1;}
-}
+
 @keyframes pulaPikachu{
     0%{
         transform: translateY(0px);
     }
-    25%{
-        transform: translateY(-30px);
-    }
     50%{
-        transform: translateY(-100px);
+        transform: translateY(-200px);
     }
     100%{
         transform: translateY(0px);
