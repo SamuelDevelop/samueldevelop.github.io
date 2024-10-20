@@ -34,7 +34,7 @@ header{
     padding-left: 2px;
 }
 
-h1, h2, h3, p, a, .box-referencias{
+h1, h2, h3, p, a, .box-referencias, table{
     color: white;
 }
 
@@ -46,6 +46,10 @@ h1, h2, #texto-carrossel, .box-referencias summary{
 
 h1, h2, h3, footer{
     clear: both;
+}
+
+h1, h2, h3{
+    animation: secaoAparecer 500ms ease-in-out;
 }
 
 header img{
@@ -73,6 +77,18 @@ h3{
     display: flex; justify-content: space-between; align-items: center;
     padding: 15px;
     margin-bottom: 25px;
+}
+
+@keyframes secaoAparecer{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
 }
 
 .texto-secao-inicial {
@@ -107,7 +123,7 @@ h3{
     transition: opacity 0.5s ease-in-out;
 }
 
-p, a{
+p, a, table{
     font-family: "League Spartan", sans-serif; font-optical-sizing: auto;
     font-weight: weight; font-style: normal;
 }
@@ -301,34 +317,25 @@ iframe{
 }
 
 table {
-    font-family: "Moderustic", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
     margin-bottom: 5px;
-    color: rgba(255, 255, 255, 0.795);
+    text-align: left;
+    font-size: 110%;
+    border-collapse: collapse;
 }
 
-thead { 
-    font-size: 18px;
+thead , td:hover{ 
     font-weight: bold;
-    background-color: rgb(85, 12, 255);
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-image:linear-gradient(to right,#38236d, #2b195a, #1e035e);
+    padding: 10px auto;
 }
 tbody {
-    font-size: 12px;
-    background-color: rgba(34, 37, 39, 0.521);
-    text-align: center;
+    background-image:linear-gradient(to right,#13131a, #100f18, #050308); 
 }
-td
-{
+
+td {
     padding: 8px;
-}
-td:hover{
-    font-size: 18px;
-    background-color: rgba(18, 14, 255, 0.658);  color: rgb(255, 255, 255); 
+    transition: 500ms ease-in-out;
 }
 
 .barra-lateral{
@@ -435,12 +442,6 @@ footer img{
 
 #pika2:hover, #goku2:hover, #luffy2:hover, #naruto2:hover{
     width: 160px;
-}
-
-@keyframes secaoAparecer{
-    0%{}
-    50%{}
-    100%{}
 }
 
 @keyframes pulaPikachu{
