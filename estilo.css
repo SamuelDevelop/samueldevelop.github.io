@@ -75,7 +75,6 @@ h3{
     box-sizing: border-box;
     width: 100%;
     display: flex; justify-content: space-between; align-items: center;
-    padding: 15px;
     margin-bottom: 25px;
 }
 
@@ -109,7 +108,9 @@ h3{
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
 }
 
-.secao-inicial .logotipo-inicial{ width: 40%; }
+.secao-inicial .logotipo-inicial{
+    width: 40%; 
+}
 
 .secao-inicial h2{
     font-size: 70px; margin-left: 0px;
@@ -176,7 +177,7 @@ p{
     width: 50%;
     margin: 0px 10px 10px 0px;
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,1);
-    mask-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.89) 30%, rgba(0, 0, 0, 0));
+    mask-image:linear-gradient(to right, rgba(0, 0, 0, 0.89) 30%, rgba(0, 0, 0, 0));
     filter: saturate(1.1);
 }
 
@@ -196,8 +197,9 @@ p{
 }
 
 .box-comparacao article p{
-    line-height: 1.5;
-    padding: 10px 5px;  
+    line-height: 1.2;
+    padding: 5px 2px;  
+    font-size: 110%;
 }
 
 .box-comparacao article p{
@@ -240,10 +242,12 @@ p{
     padding: 10px 5px;
     transition: 500ms ease-in-out;
 }
+
 .lista-cards article img{
     width: 200px;
     height: 190px;
     border-radius: 50%;
+    box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.685);
     object-fit: cover;
     margin-top: 5px;
     transition: 500ms ease-in-out;

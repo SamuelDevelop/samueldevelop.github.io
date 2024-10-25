@@ -23,33 +23,27 @@ function atualizarCarrossel() {
     const textoAnime = document.getElementById('texto-anime');
     const imagemDetalhes = document.getElementById('imagem-detalhes');
 
-    // Fade out the current elements
-    logoAnime.style.transition = 'opacity 0.5s ease-out'; // Transição de 500ms
-    textoAnime.style.transition = 'opacity 0.5s ease-out'; // Transição de 500ms
-    imagemDetalhes.style.transition = 'opacity 0.5s ease-out'; // Transição de 500ms
+    logoAnime.style.transition = 'opacity 0.5s ease-out';
+    textoAnime.style.transition = 'opacity 0.5s ease-out';
+    imagemDetalhes.style.transition = 'opacity 0.5s ease-out';
 
     logoAnime.style.opacity = 0;
     textoAnime.style.opacity = 0;
     imagemDetalhes.style.opacity = 0;
 
     setTimeout(() => {
-        // Atualiza as informações do carrossel
         logoAnime.src = conteudoCarrossel[indexAtual].logo;
         textoAnime.textContent = conteudoCarrossel[indexAtual].texto;
         imagemDetalhes.src = conteudoCarrossel[indexAtual].imagem;
 
-        // Fade in the new elements
         logoAnime.style.opacity = 1;
         textoAnime.style.opacity = 1;
         imagemDetalhes.style.opacity = 1;
-    }, 500); // Espera 500ms para atualizar o conteúdo
+    }, 500);
 
-    // Atualiza o índice para o próximo anime
     indexAtual = (indexAtual + 1) % conteudoCarrossel.length;
 }
 
-// Atualiza o carrossel a cada 4 segundos
 setInterval(atualizarCarrossel, 4000);
 
-// Chama a função uma vez para iniciar
 atualizarCarrossel();
