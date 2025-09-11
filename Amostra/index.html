@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amostra de Curso</title>
   <link rel="stylesheet" href="amostra.css">
+  <link rel="icon" href="imagens/logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +37,7 @@
 
   <main>
     <section id="inicio" class="section active">
-      <img src="imagens/camups1.webp" alt="Imagem Início">
+      <img src="imagens/camups1.webp" alt="Imagem Início" id="imagem_Central">
       <h3>Bem Vindos ao CEFET-MG!</h3>
       <p>O Centro Federal de Educação Tecnológica de Minas
           Gerais (CEFET-MG) é uma Instituição centenária e está
@@ -83,11 +84,11 @@
       <p>O Conteúdo do curso é bem amplo, e contém diversos temas como:</p>
       <div class="list-cards">
         <div class="card">
-          <img src="imagens/ideia.jpg">
+          <img src="imagens/logica.png">
           <h3>Lógica de Programação</h3>
         </div>
         <div class="card">
-          <img src="imagens/web.jpg">
+          <img src="imagens/web.png">
           <h3>Web</h3>
         </div>
         <div class="card">
@@ -144,7 +145,7 @@
             <h3>Desenvolvedor</h3>
           </div>
           <div class="card">
-            <img src="imagens/web.gif">
+            <img src="imagens/web.png">
             <h3>Desenvolvedor Web</h3>
           </div>
           <div class="card">
@@ -176,29 +177,6 @@
     </section>
   </main>
 
-  <script>
-    const links = document.querySelectorAll("nav a");
-    const sections = document.querySelectorAll(".section");
-
-    links.forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const target = link.getAttribute("data-section");
-
-        links.forEach(l => l.classList.remove("active"));
-        link.classList.add("active");
-
-        sections.forEach(sec => {
-          if (sec.id === target) {
-            sec.style.display = "flex";
-            setTimeout(() => sec.classList.add("active"), 10);
-          } else {
-            sec.classList.remove("active");
-            setTimeout(() => sec.style.display = "none", 600);
-          }
-        });
-      });
-    });
-  </script>
+  <script src="Jayesse.js"></script>
 </body>
 </html>
