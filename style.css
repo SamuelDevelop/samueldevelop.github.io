@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(8, 12, 17);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    font-size: 18pt;
+    margin: 2px 0px;
+}
+
+h2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    font-size: 24pt;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 12pt;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links{
+    box-sizing: border-box;
+    position: relative;
+    margin: 3rem 1rem;
+    width: 90vw;
+    padding: 1rem;
+
+    background: linear-gradient(
+        135deg,
+        rgba(28, 51, 104, 0.55),
+        rgba(6, 22, 61, 0.35)
+    );
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(140, 170, 255, 0.25);
+    border-radius: 1rem;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.45),
+        inset 0 1px 1px rgba(180, 200, 255, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.links::-webkit-scrollbar {
+    height: 8px;
+}
+
+.links::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.links::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        rgba(120, 150, 255, 0.6),
+        rgba(80, 110, 220, 0.35)
+    );
+    border-radius: 10px;
+}
+
+.links:hover{
+    box-shadow:
+        0 14px 45px rgba(0, 0, 0, 0.6),
+        inset 0 1px 1px rgba(200, 220, 255, 0.35);
+}
+
+
+.card{
+    cursor: pointer;
+    min-width: 160px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(28, 51, 104, 0.55),
+        rgba(6, 22, 61, 0.35)
+    );
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(150, 180, 255, 0.25);
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.45),
+        inset 0 1px 1px rgba(200, 220, 255, 0.25);
+
+    transition:
+        transform 0.50s ease,
+        box-shadow 0.50s ease,
+        background 0.50s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px) scale(1.02);
+
+    background: linear-gradient(
+        145deg,
+        rgba(55, 85, 150, 0.55),
+        rgba(30, 50, 95, 0.45)
+    );
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.6),
+        inset 0 1px 1px rgba(220, 235, 255, 0.35);
+}
+
+/* Brilho líquido sutil */
+.card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        circle at top left,
+        rgba(200, 220, 255, 0.35),
+        transparent 40%
+    );
+    pointer-events: none;
+}
+
+.links a{
+    margin-top: 5px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.self-image{
+    width: 15vw; height: 15vw;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem 0px;
+    padding: 0.5rem;
+
+    transform-origin: center center;
+    backface-visibility: hidden;
+    animation: spin 5s linear infinite;
+}
+
+.self-image:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .self-image{
+        width: 40vw; height: 40vw;
+    }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
