@@ -1,0 +1,22 @@
+{
+    "projetos": [
+        {
+            "nome": "Web Shonen",
+            "logo-link": "assets/WebShonen.png",
+            "descricao": "Um site sobre animes",
+            "data": "Aproximadamente: 2024",
+            "link-repo": "https://github.com/SamuelDevelop/WebShonen",
+            "github-pages": true,
+            "github-pages-link": "https://SamuelDevelop.github.io/WebShonen"
+        },
+        {
+            "nome": "Clicker Game",
+            "logo-link": "assets/flor.gif",
+            "descricao": "Um site sobre clicar em Zumbis",
+            "data": "Aproximadamente: 2024",
+            "link-repo": "https://github.com/samuscadev/Clicker",
+            "github-pages": true,
+            "github-pages-link": "https://samuscadev.github.io/Clicker"
+        }
+    ]
+}
