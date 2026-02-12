@@ -1,0 +1,21 @@
+.side-card{
+    position: absolute;
+    z-index: 3;
+    
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.027), rgba(255, 255, 255, 0.103), rgba(255, 255, 255, 0.226));
+    backdrop-filter: blur(7px);
+    
+    opacity: 0;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    border-radius: 0.5rem;
+    width: 80vh; height: 70vh;
+    top: 50%; right: 5vw;
+    transform: translateY(-50%);
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+    transition: ease-in-out all 50ms;
+}

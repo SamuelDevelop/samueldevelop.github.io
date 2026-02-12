@@ -3,7 +3,15 @@
 }
 
 body{
-    background-color: rgb(7, 8, 17);
+    margin: 0;
+    padding: 0;
+
+    background-image: linear-gradient(rgb(11, 13, 29), rgb(5, 5, 12));
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
 }
 
 html, body {
@@ -33,16 +41,16 @@ h2{
 }
 
 h3{
-    font-family: "Inter", sans-serif;
+    font-family: "Google Sans Code", monospace;
     font-optical-sizing: auto;
     color: rgba(255, 255, 255, 0.856);
     font-size: 12pt;
 }
 
 p{
-    font-family: "Inter", sans-serif;
+    font-family: "Google Sans Code", monospace;
     font-optical-sizing: auto;
-    color: rgba(255, 255, 255, 0.589);
+    color: rgba(255, 255, 255, 0.678);
     font-size: 12pt;
 }
 
@@ -51,6 +59,7 @@ p{
 }
 
 main{
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +96,7 @@ section{
 }
 
 .self-image:hover {
-    width: 15.5vw; height: 15.5vw;
+    opacity: 0.7;
 
     background: 
         linear-gradient(45deg, rgb(21, 44, 255), rgb(88, 105, 255), rgb(255, 255, 255)) border-box;
@@ -101,11 +110,8 @@ section{
     }
 }
 
-.main-button{
-    padding: 1.2rem 1.5rem;
-
-    background-color: none;
-    background-image: linear-gradient(45deg, rgb(7, 8, 17), rgb(11, 13, 32), rgb(18, 34, 107));
+.main-button, .social-medias-button{
+    background-color: transparent;
     outline: none;
     border: none;
 
@@ -115,10 +121,18 @@ section{
     justify-content: center;
 
     cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.main-button{
+    border-radius: 5px;
+    padding: 1.2rem 1.5rem;
+    background-color: none;
+    background-image: linear-gradient(45deg, rgb(7, 8, 17), rgb(11, 13, 32), rgb(18, 34, 107));
 }
 
 .main-button:hover{
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.322), rgb(255, 255, 255));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.918), rgb(255, 255, 255));
 }
 
 .main-button > *{
@@ -131,4 +145,37 @@ section{
     color: rgb(14, 20, 66);
 }
 
+.social-medias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+    justify-content: center;
+}
 
+.social-medias-button{
+    filter: drop-shadow(-1px 2px 2px #ffffff54);
+}
+
+.social-medias-button > *{
+    color: white;
+    font-size: 20pt;
+}
+
+.social-medias-button:hover{
+    transform: translateY(-40%);
+}
+
+.blur-box{
+    width: 100vw; height: 100vh;
+    background-color: rgba(5, 10, 27, 0.596);
+    
+    backdrop-filter: blur(7px);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+
+    display: none;
+    opacity: 0;
+    transition: ease-in-out all 50ms;
+}

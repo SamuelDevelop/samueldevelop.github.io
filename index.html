@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/side-card.css">
+
     <title>Samuel Soares</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,9 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <main>
         <section class="info">
             <img class="self-image" src="self-image.jpg">
@@ -22,29 +28,39 @@
                 <h3 class="mb-05"></i>Samuel Soares dos Santos</h3>
 
                 <p><i class="fa-solid fa-earth-americas"></i> - Brasileiro</p>
+                <p><i class="fa-solid fa-cake-candles"></i> - 17 Anos</p>
                 <p><i class="fa-solid fa-user-graduate"></i> - Estudante de Informática - CEFET MG</p>
-                <p><i class="fa-solid fa-code"></i> - Apaixonado por Programação e Desenvolvimento de Jogos</p>
+                
             </div>
         </section>
         
-        <button class="main-button">
+        <button class="main-button" onclick="openMenu()">
             <i class="fa-solid fa-house"></i>
         </button>
         
         <section>
             <h3><i class="fa-brands fa-github"></i> @SamuelDevelop - 2026</h3>
             <div class="social-medias info">
-                <button class="main-button">
+                <button class="social-medias-button" onclick="abrirGuia(`https://github.com/SamuelDevelop`)">
                     <i class="fa-brands fa-square-github"></i>
                 </button>
-                <button class="main-button">
+                <button class="social-medias-button" onclick="abrirGuia(`https://www.instagram.com/samuel_soaress28`)">
                     <i class="fa-brands fa-instagram"></i>
                 </button>
             </div>
         </section>
     </main>
 
-<script src="pagina-inicial.js"></script>
+    <div class="blur-box"></div>
+    <menu class="main-menu"></menu>
+    <div class="side-card">
+        <h1>Sobre  Mim</h1>
+        <p>Blá blá blá Blá blá blá Blá blá blá Blá blá blá Blá blá blá Blá blá blá</p>
+    </div>
+    
+    <script src="js/side-card.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controll.js"></script>
 
 </body>
 </html>
