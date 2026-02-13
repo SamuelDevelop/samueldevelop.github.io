@@ -4,19 +4,19 @@ const blurBoxEl = document.querySelector(".blur-box");
 const menuOptionsHTML = 
 `
     <h1>Menu</h1>
-    <button class="menu-option" onclick="moveLeftMenu()">
+    <button class="menu-option" onclick="openSideCard('sobre-mim')">
         <i class="fa-solid fa-user"></i> Sobre Mim
     </button>
-    <button class="menu-option" onclick="moveCenterMenu()">
+    <button class="menu-option" onclick="openSideCard('meus-projetos')">
         <i class="fa-regular fa-folder-open"></i> Meus Projetos
     </button>
-    <button class="menu-option">
+    <button class="menu-option" onclick="openSideCard('habilidades')">
         <i class="fa-solid fa-palette"></i> Habilidades
     </button>
-    <button class="menu-option">
+    <button class="menu-option" onclick="openSideCard('curriculo')">
         <i class="fa-solid fa-file-lines"></i> Currículo
     </button>
-    <button class="menu-option">
+    <button class="menu-option" onclick="openSideCard('contatos')">
         <i class="fa-solid fa-phone"></i> Contato
     </button>
 
@@ -61,6 +61,8 @@ function closeMenu(){
     const opcoesMenu = document.querySelectorAll(".menu-option");
     let tempo = 100;
 
+    closeSideCard();
+    
     opcoesMenu.forEach(opcao => {
         setTimeout(()=>{
             opcao.style.opacity = 0;
@@ -94,16 +96,12 @@ function closeMenu(){
         blurBoxEl.style.opacity = 0;
         blurBoxEl.style.display = "none";
     }, newTempo + 250);
-
-    
 }
 
 function moveLeftMenu(){
     mainMenuEl.classList.add('left');
-    openSideCard();
 }
 
 function moveCenterMenu(){
     mainMenuEl.classList.remove('left');
-    closeSideCard();
 }

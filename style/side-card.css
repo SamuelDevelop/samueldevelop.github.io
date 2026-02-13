@@ -6,7 +6,7 @@
     backdrop-filter: blur(7px);
     
     opacity: 0;
-    border: 1px solid rgba(255, 255, 255, 0.473);
+    border: 1px solid rgba(255, 255, 255, 0.137);
     border-radius: 0.5rem;
     width: 80vh; height: 70vh;
     top: 50%; right: 5vw;
@@ -18,4 +18,34 @@
 
     padding: 2rem;
     transition: ease-in-out all 50ms;
+}
+
+.side-card > button{
+    color: white;
+    font-size: 20pt;
+    filter: drop-shadow(-1px 2px 2px #ffffff54);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+    justify-content: center;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.side-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 90%;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.side-conteudo > * {
+    flex: 1;
 }

@@ -53,14 +53,103 @@
 
     <div class="blur-box"></div>
     <menu class="main-menu"></menu>
-    <div class="side-card">
-        <h1>Sobre  Mim</h1>
-        <p>Blá blá blá Blá blá blá Blá blá blá Blá blá blá Blá blá blá Blá blá blá</p>
-    </div>
+    <div class="side-card"></div>
+
+
+    <template id="sobre-mim">
+        <div class="side-conteudo">
+            <h1>Sobre Mim:</h1>
+            <p>Olá! Eu sou o Samuel, tenho 17 anos ou seja sou de 2008. Nasci em Minas Gerais
+                mais especificamente em Contagem. Gosto de filmes ✋😐🤚 (Cultura Pop no geral),
+                Jogos 🤓☝️, Programação 💻 e talvez pizza seja minha comida favorita 🍕, embora Deus não
+                tenha me dado um parafuso que faz com que as pessoas gostem de comer carne. ❌🍖 
+                (eu não sou vegano, passo perto de um vegetariano, mas não é bem isso).
+            </p>
+
+            <h2>De bate pronto</h2>
+            <p>
+                Religião: Cristão ✝️<br>
+                Torcida: Cruzeiro EC 🔵<br>
+                Um Filme: O Senhor dos Anéis 💍<br>
+                Um Jogo: Eu gosto do Zelda 🗡️<br>
+                Uma comida: Pizza 🍕 <br>
+                Um Hobby aleatorio: Cozinhar 👨‍🍳(cozinhar bem, aí já é outro papo).
+            </p>
+        </div>
+    </template>
+
+    <template id="meus-projetos">
+        <div class="side-conteudo">
+            <h1>Meus Projetos:</h1>
+            <p>
+                Eu gosto bastante de trabalhar com projetinhos de Programação, justamente para reforçar habilidades,
+                tentar aprender coisas novas ou meu Deus do nada deu vontade de codar isso...
+            </p>
+
+            <p>Criei uma experiência melhor para vê-los:</p>
+
+            <button class="main-button">
+                <p>Navegar</p>
+            </button>
+        </div>
+    </template>
+
+    <template id="habilidades">
+        <div class="side-conteudo">
+            <h1>Minhas Habilidades:</h1>
+
+            <h2>Principais:</h2>
+            <p>Aqui vão algumas das ferramentas que eu tenho maior facilidade, e que mais trabalhei em projetos:
+                <br>
+                <i class="fa-brands fa-square-js"></i> - JavaScript <br>
+                <i class="fa-brands fa-java"></i> - Java<br>
+                <i class="fa-brands fa-html5"></i> - HTML 5<br>
+                <i class="fa-brands fa-css3-alt"></i> - CSS 3<br>
+            </p>
+
+            <h2>Secundárias:</h2>
+            <p>Aqui vão algumas das ferramentas que eu já usei até que bastante, mas o uso não foi recorrente:
+                <br>
+                <i class="fa-brands fa-python"></i> - Python<br>
+                <i class="fa-solid fa-c"></i> - C (linguagem)
+            </p>
+
+            <h2>Alguma Expêriencia</h2>
+            <p>Já utilizei alguma dessas ferramentas, seja por aprendizado ou curiosidade, mas não foi tão recorrente e não tenho muitas pretenções:
+                <br>
+                <i class="fa-brands fa-php"></i> - PHP <br>
+            </p>
+        </div>
+    </template>
+
+    <template id="curriculo">
+        <div class="side-conteudo">
+            <h1>Meu Currículo:</h1>
+            <p>Eu não tenho um currículo pois currículos são para Betas</p>
+        </div>
+    </template>
+
+    <template id="contatos">
+        <div class="side-conteudo">
+            <h1>Contatos:</h1>
+            <p>Sem contatos pelo amor de Deus!</p>
+            <div class="social-medias info">
+                <button class="social-medias-button" onclick="abrirGuia(`https://github.com/SamuelDevelop`)">
+                    <i class="fa-brands fa-square-github"></i>
+                </button>
+                <button class="social-medias-button" onclick="abrirGuia(`https://www.instagram.com/samuel_soaress28`)">
+                    <i class="fa-brands fa-instagram"></i>
+                </button>
+                <button class="social-medias-button" onclick="abrirGuia(`https://www.linkedin.com/in/samuel-soares-dos-santos-775b793a5/`)">
+                    <i class="fa-brands fa-linkedin"></i>
+                </button>
+            </div>
+        </div>
+    </template>
     
-    <script src="js/side-card.js"></script>
     <script src="js/view.js"></script>
     <script src="js/controll.js"></script>
+    <script src="js/side-card.js"></script>
 
 </body>
 </html>

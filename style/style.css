@@ -168,7 +168,7 @@ section{
 
 .blur-box{
     width: 100vw; height: 100vh;
-    background-color: rgba(5, 10, 27, 0.596);
+    background-color: rgba(3, 6, 19, 0.596);
     
     backdrop-filter: blur(7px);
     position: absolute;
@@ -178,4 +178,20 @@ section{
     display: none;
     opacity: 0;
     transition: ease-in-out all 50ms;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-image: white;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+    border-radius: 10px;
+}
+
+*::selection{
+    background-color: white;
+    color: rgb(11, 13, 32);
 }
