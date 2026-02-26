@@ -11,7 +11,7 @@ const menuOptionsHTML =
         <i class="fa-regular fa-folder-open"></i> Meus Projetos
     </button>
     <button class="menu-option" onclick="openSideCard('habilidades')">
-        <i class="fa-solid fa-palette"></i> Habilidades
+        <i class="fa-solid fa-palette"></i> Skills
     </button>
     <button class="menu-option" onclick="openSideCard('curriculo')">
         <i class="fa-solid fa-file-lines"></i> Currículo

@@ -14,9 +14,7 @@ function carregarModeloSideCard(id) {
 
     const fecharSideCard = 
     `
-        <button onclick="closeSideCard()">
-            <i class="fa-solid fa-angles-right"></i>
-        </button>
+        
     `;
 
     sideCard.innerHTML += fecharSideCard;

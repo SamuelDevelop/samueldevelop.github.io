@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
 
-    background-image: linear-gradient(rgb(11, 13, 29), rgb(5, 5, 12));
+    background-image: linear-gradient(rgb(13, 14, 22), rgb(12, 12, 22));
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@ h1{
     font-size: 25pt;
     margin-bottom: 1rem;
     border-bottom: 3px solid;
-    border-image: linear-gradient(90deg, rgb(20, 45, 160), rgb(11, 13, 32), rgb(7, 8, 17)) 1;
+    border-image: linear-gradient(90deg, rgb(28, 61, 212), rgb(11, 13, 32), rgba(7, 8, 17, 0)) 1;
 }
 
 h2{
@@ -82,7 +82,7 @@ section{
 .self-image{
     width: 15vw; height: 15vw;
     background: 
-        linear-gradient(45deg, rgb(7, 8, 17), rgb(11, 13, 32), rgb(20, 45, 160)) border-box;
+        linear-gradient(45deg, rgb(7, 8, 17), rgb(11, 13, 32), rgb(17, 46, 173)) border-box;
 
     border-radius: 50%;
     display: block;
@@ -99,7 +99,7 @@ section{
     opacity: 0.7;
 
     background: 
-        linear-gradient(45deg, rgb(21, 44, 255), rgb(88, 105, 255), rgb(255, 255, 255)) border-box;
+        linear-gradient(45deg, rgb(16, 44, 167), rgb(11, 13, 32), rgb(7, 8, 17)) border-box;
    
     cursor: pointer;
 }
@@ -178,17 +178,6 @@ section{
     display: none;
     opacity: 0;
     transition: ease-in-out all 50ms;
-}
-
-*::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-image: white;
-    border: 1px rgba(255, 255, 255, 0.459) solid;
-    border-radius: 10px;
 }
 
 *::selection{
