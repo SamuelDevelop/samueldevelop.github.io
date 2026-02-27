@@ -21,4 +21,3 @@ async function loadProjetos() {
     myProjectsEl.innerHTML = string;
 }
 
-loadProjetos();
