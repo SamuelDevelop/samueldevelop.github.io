@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
 
-    background-image: linear-gradient(rgb(13, 14, 22), rgb(12, 12, 22));
+    background-image: linear-gradient(#0d1117, #080b0f);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@ h1{
     font-size: 25pt;
     margin-bottom: 1rem;
     border-bottom: 3px solid;
-    border-image: linear-gradient(90deg, rgb(28, 61, 212), rgb(11, 13, 32), rgba(7, 8, 17, 0)) 1;
+    border-image: linear-gradient(90deg, #212830, #191f25, rgba(7, 8, 17, 0)) 1;
 }
 
 h2{
@@ -58,6 +58,12 @@ p{
     margin-bottom: 0.5rem;
 }
 
+.row-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
 main{
     z-index: 0;
     display: flex;
@@ -81,27 +87,18 @@ section{
 
 .self-image{
     width: 15vw; height: 15vw;
-    background: 
-        linear-gradient(45deg, rgb(7, 8, 17), rgb(11, 13, 32), rgb(17, 46, 173)) border-box;
-
+    
+    border: 3px solid #212830;
+    
     border-radius: 50%;
     display: block;
     margin: 1rem 0px;
-    padding: 0.5rem;
+    padding: 0.4rem;
 
     transform-origin: center center;
     backface-visibility: hidden;
 
     transition: all 150ms ease-in-out;
-}
-
-.self-image:hover {
-    opacity: 0.7;
-
-    background: 
-        linear-gradient(45deg, rgb(16, 44, 167), rgb(11, 13, 32), rgb(7, 8, 17)) border-box;
-   
-    cursor: pointer;
 }
 
 @media (max-width: 800px){
@@ -116,33 +113,32 @@ section{
     border: none;
 
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     justify-content: center;
 
     cursor: pointer;
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .main-button{
-    border-radius: 5px;
-    padding: 1.2rem 1.5rem;
-    background-color: none;
-    background-image: linear-gradient(45deg, rgb(7, 8, 17), rgb(11, 13, 32), rgb(18, 34, 107));
-}
-
-.main-button:hover{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.918), rgb(255, 255, 255));
+    font-family: "Google Sans Code", monospace;
+    gap: 0.4rem;
+    background-color: #212830;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
 }
 
 .main-button > *{
-    font-size: 18pt;
-    text-align: center;
     color: white;
 }
 
+.main-button:hover{
+    background-color: #ffffff;
+}
+
 .main-button:hover > *{
-    color: rgb(14, 20, 66);
+    color: #080b0f;
 }
 
 .social-medias{
@@ -159,16 +155,16 @@ section{
 
 .social-medias-button > *{
     color: white;
-    font-size: 20pt;
+    font-size: 24pt;
 }
 
 .social-medias-button:hover{
-    transform: translateY(-40%);
+    transform: translateY(-30%);
 }
 
 .blur-box{
     width: 100vw; height: 100vh;
-    background-color: rgba(3, 6, 19, 0.596);
+    background-color: #05060773;
     
     backdrop-filter: blur(7px);
     position: absolute;
@@ -182,5 +178,5 @@ section{
 
 *::selection{
     background-color: white;
-    color: rgb(11, 13, 32);
+    color: #07090c;
 }

@@ -23,21 +23,23 @@
     
     font-family: "Google Sans Code", monospace;
     font-optical-sizing: auto;
-    color: rgba(255, 255, 255, 0.658);
     font-size: 18pt;
 
+    color: white;
     background-color: transparent;
     outline: none;
     border: none;
     padding: 0.2rem;
     cursor: pointer;
     transition: all ease-in-out 100ms;
+    border-left: 3px solid rgba(255, 255, 255, 0.466);
+    padding-left: 1rem;
 }
 
 .menu-option:hover{
-    color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
     transform: translateX(10%);
+    border-left: 3px solid #ffffff;
+    border-radius: 0.3rem;
 }
 
 .left{
@@ -47,3 +49,12 @@
     width: 40vh; height: 70vh;
 }
 
+.image-tools{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.image-tools img:hover{
+    filter: brightness(130%) contrast(80%);
+}

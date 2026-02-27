@@ -1,10 +1,8 @@
 .side-card{
     position: absolute;
     z-index: 3;
-    
-    background-image: linear-gradient(rgba(255, 255, 255, 0.062), rgba(0, 0, 0, 0.842));
-    backdrop-filter: blur(7px);
-    
+    background-color: #0a0c0f;
+            
     opacity: 0;
     width: 80vh; height: 65vh;
     top: 50%; right: 5vw;
@@ -34,12 +32,13 @@
     cursor: pointer;
 }
 
-.top-bar, .side-card, .side-conteudo{
-    border: 1px solid rgba(255, 255, 255, 0.164);
+.side-card, .side-conteudo{
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    border-radius: 0.2rem;
 }
 
 .top-bar{
-    background-color: rgb(27, 27, 27);
+    background-image: linear-gradient(#0d1117, #080b0f);
     width: 100%;
     box-sizing: border-box;
     flex: 0.1;
@@ -52,6 +51,10 @@
 
 .top-bar > h1, .side-conteudo h2{
     font-family: "Google Sans Code", monospace;
+}
+
+.top-bar > button{
+    color: white;
 }
 
 .side-conteudo {
@@ -70,18 +73,13 @@
     color: rgba(255, 255, 255, 0.658);
 }
 
-.side-conteudo p::selection{
-    background-color: rgb(185, 185, 185);
-    color: rgb(17, 17, 17);
-}
-
 .side-conteudo > * {
     flex: 1;
 }
 
 .side-conteudo h2{
     font-size: 14pt;
-    color: rgb(255, 240, 106);
+    color: rgb(218, 154, 255);
 }
 
 .side-conteudo::-webkit-scrollbar {
@@ -90,15 +88,16 @@
 }
 
 .side-conteudo::-webkit-scrollbar-thumb {
-    border: 1px solid rgb(58, 58, 58);
+    background-color: rgb(255, 255, 255);
 }
 
-.side-conteudo button{
-    background-color: rgb(189, 189, 189);
-    color: rgb(17, 17, 17);
-    gap: 2rem;
+.nave{
+    color: rgb(255, 255, 255);
+    gap: 0.5rem;
+    transition: 50ms ease-in-out all;
 }
 
-.side-conteudo > *{
-    color: rgb(17, 17, 17);
+.nave:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: 0.2rem;
 }

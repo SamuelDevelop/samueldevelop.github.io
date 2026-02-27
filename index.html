@@ -34,9 +34,17 @@
             </div>
         </section>
         
-        <button class="main-button" onclick="openMenu()">
-            <i class="fa-solid fa-house"></i>
-        </button>
+        <div class="row-buttons">
+            <button class="main-button" onclick="openMenu()">
+                <i class="fa-solid fa-house"></i>
+                <p>menu</p>
+            </button>
+            <button class="main-button" onclick="redirecionar('/projetos/')">
+                <i class="fa-regular fa-folder-open"></i>
+                <p>projetos</p>
+            </button>
+        </div>
+        
         
         <section>
             <h3><i class="fa-brands fa-github"></i> @SamuelDevelop - 2026</h3>
@@ -72,9 +80,9 @@
             <h2>De bate pronto:</h2>
             <p>
                 Religião: Cristão<br>
-                Torcida: Cruzeiro EC<br>
+                Torcida: Cruzeiro<br>
                 Um Filme: O Senhor dos Anéis<br>
-                Um Jogo: Eu gosto do Zelda<br>
+                Um Jogo: Zeldas<br>
                 Uma comida: Pizza <br>
                 Um Hobby aleatorio: Cozinhar (cozinhar bem, aí já é outro papo).
             </p>
@@ -94,7 +102,7 @@
 
             <p>Criei uma experiência melhor para vê-los:</p>
 
-            <button><i class="fa-solid fa-paper-plane"></i> Navegar</button>
+            <button class="nave"><i class="fa-solid fa-paper-plane"></i> Navegar</button>
         </div>
     </template>
 
@@ -105,26 +113,29 @@
         </div>
         <div class="side-conteudo">
             <h2>Principais:</h2>
-            <p>Aqui vão algumas das ferramentas que eu tenho maior facilidade, e que mais trabalhei em projetos:
-                <br>
-                <img src="https://img.shields.io/badge/JavaScript-yellow?logo=javascript"> 
+            <p>Aqui vão algumas das ferramentas que eu tenho maior facilidade, e que mais trabalhei em projetos:</p>
+            
+            <div class="image-tools">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
                 <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
                 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
                 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-            </p>
-
+            </div>
+                       
             <h2>Secundárias:</h2>
-            <p>Aqui vão algumas das ferramentas que eu já usei até que bastante, mas o uso não foi recorrente:
-                <br>
-                <img src="https://img.shields.io/badge/Python-blue?logo=python">
+            <p>Aqui vão algumas das ferramentas que eu já usei até que bastante, mas o uso não foi recorrente:</p>
+            
+            <div class="image-tools">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
                 <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
-            </p>
+            </div>
 
             <h2>Alguma Expêriencia:</h2>
-            <p>Já utilizei alguma dessas ferramentas, seja por aprendizado ou curiosidade, mas não foi tão recorrente e não tenho muitas pretenções:
-                <br>
+            <p>Já utilizei alguma dessas ferramentas, seja por aprendizado ou curiosidade, mas não foi tão recorrente e não tenho muitas pretenções:</p>
+            
+            <div class="image-tools">
                 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-            </p>
+            </div>
         </div>
     </template>
 

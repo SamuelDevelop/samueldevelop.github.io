@@ -21,7 +21,7 @@ const menuOptionsHTML =
     </button>
 
     <button class="menu-option" onclick="closeMenu()">
-        <i class="fa-solid fa-x"></i>
+        <i class="fa-solid fa-x"></i> Fechar
     </button>
 `;
 
